@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频</title>
+    <style>
+        *{
+             padding: 0;
+             margin: 0;    
+        }
+        body{
+            max-height: 80%;
+            background-color: black;
+        }
+        video{
+           position: absolute;
+           left: 400px;
+        }
+        input{
+            position: fixed;
+            top: 50%;
+            left: 10%;
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+            color: rgb(255, 69, 97) ;
+            background-color: rgb(40, 36, 36);
+            border: rgb(255, 69, 97) solid 1px;
+        }
+        input:hover{
+            color: #ffffff;
+            background-color: rgb(255, 69, 97);
+            transition: 0.5s;
+            margin: 15px 20px 20px 20px;
+            box-shadow:10px 10px 100px 5px rgb(255, 69, 97),
+            -10px -10px 100px 5px rgb(255, 69, 97),
+             2px 2px 2px 1px rgba(0, 0, 0, 0.5),
+            -2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+         }
+        input:active{
+            color: #000;    
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <video id="video" width="50%" height="100%" autoplay loop controls>
+        <source id="source" >
+     </video>
+     <input type="button" onclick="javascript:location.reload();" value="下一个">
+     <!-- 刷新页面 -->
+    </div>
+     
+
+     <script src="video.js"></script>
+
+</body>
+</html>
